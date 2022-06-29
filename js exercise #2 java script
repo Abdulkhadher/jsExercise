@@ -29,10 +29,7 @@ var fname = document.getElementById('fname').value
   return dob
   }
   console.log(dob)
-  if(messages.length>0)
-  {
   
-  }
 
 
   
