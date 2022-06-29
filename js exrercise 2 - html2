@@ -2,8 +2,8 @@
 <html>
 <body>
     <h1>My first form</h1>
-    <div id="error"> </div>
-    <form>
+    
+    
     <div>
     <label for="fname">First name</label>
 <input type="text" id="fname" name="First name:" value=""><br>
@@ -15,4 +15,4 @@
         <input type="date" id="dob" name="Date Of Birth:"value="" ><br>
         <button type="submit" onclick="myfunction()">submit</button>
         </div>
-    </form>
+    
