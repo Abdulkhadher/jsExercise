@@ -1,0 +1,41 @@
+function myfunction(){
+var fname = document.getElementById('fname').value
+  
+  var lname = document.getElementById('lname').value
+  
+  var mob = document.getElementById('mob').value
+  
+  var dob = document.getElementById('dob').value
+  
+  let messages=[]
+  if(fname===""){
+  alert('First name is required')
+  return fname
+  }
+  console.log(fname)
+  if(lname==="" ){
+  alert('Last name is required')
+  return lname
+  }
+  console.log(lname)
+  if(mob===""){
+  alert('Mobile Number is required')
+  return mob
+  }
+  console.log(mob)
+  
+  if(dob===""){
+  alert('Date of Birth is required')
+  return dob
+  }
+  console.log(dob)
+  if(messages.length>0)
+  {
+  
+  }
+
+
+  
+
+  
+}
