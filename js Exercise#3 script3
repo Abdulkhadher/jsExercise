@@ -55,6 +55,9 @@ return;
 }
 
 //console.log(todayDate.toString())
+console.log("First name:" + fname)
+console.log("Last name:" +lname)
+console.log("Mobile number:" + mob)
 console.log("date of birth:" + new Date(dob))
   /* console.log("First name: " + fname)
   console.log("last name:"+lname)
