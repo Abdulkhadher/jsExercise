@@ -39,34 +39,13 @@ function myfunction() {
     alert('Date of Birth is required');
     return;
   }
- // console.log("date of birth:" + new Date(dob))
-  
-  //var todayDate = new Date();
-//  console.log(todayDate.toString())
-  
-  // 1. Convert DOB to Date Object
-  // var selectedDate = 
-  // 2. Compare both the date objects
-  var todayDate= new Date();
-  
+ var todayDate= new Date();
 if (new Date(todayDate)<new Date(dob)){
-alert("date of birth is invalid");
+alert("Invalid Date of Birth");
 return;
 }
-
-//console.log(todayDate.toString())
 console.log("First name:" + fname)
 console.log("Last name:" +lname)
 console.log("Mobile number:" + mob)
 console.log("date of birth:" + new Date(dob))
-  /* console.log("First name: " + fname)
-  console.log("last name:"+lname)
-  console.log("mobile number:" + mob) */
-  
-
-
-
-
-
-
 }
