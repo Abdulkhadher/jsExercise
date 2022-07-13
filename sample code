@@ -1,0 +1,78 @@
+function myfunction() {
+  var fname = document.getElementById('fname').value;
+  var lname = document.getElementById('lname').value;
+  var mob = document.getElementById('mob').value;
+  var dob = document.getElementById('dob').value;
+  
+  if (fname == "") {
+    alert('First name is required');
+    return;
+  }
+  if (fname.length<3){
+  alert("Invalid First name");
+  return;
+  }
+  
+  if (lname == "") {
+    alert('Last name is required');
+    return;
+  }
+  if (lname.length<3){
+  alert("Invalid last name");
+  return;
+  }
+  
+  if (mob == "") {
+    alert('Mobile Number is required');
+    return;
+  }
+  if(mob.length<10 || mob.length>10){
+  alert("Invalid mobile number");
+  return;
+  }
+
+  if (dob == "") {
+    alert('Date of Birth is required');
+    return;
+  }
+ var todayDate= new Date();
+if (new Date(todayDate)<new Date(dob)){
+alert("Invalid Date of Birth");
+return;
+}
+
+document.getElementById("submit").onclick =function(){
+  document.getElementById("table").style.display = "block";
+
+  var table = document.getElementById("table");
+  var row = table.insertRow(-1);
+  var fname=row.insertCell(0);
+  var lname=row.insertCell(1);
+  var mob=row.insertcell(2);
+  var dob=row.insertcell(3);
+  fname.innerHTML = document.getElementById("fname").value;
+  lname.innerHTML = document.getElementById("lname").value;
+  mob.innerHTML = document.getElementById("mob").value;
+  dob.innerHTML = document.getElementById("dob").value;
+
+  return;
+}
+
+
+
+
+const user ={fname,lname,mob,dob};
+{
+alert("value is inserted");
+
+}
+
+var add = [];
+add.push(user);
+//console.log("First name:" + fname)
+//console.log("Last name:" +lname)
+//console.log("Mobile number:" + mob)
+//console.log("date of birth:" + new Date(dob))
+console.log(user)
+
+}
